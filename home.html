@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>
+    Binge-Watch
+  </title>
+  <!--Meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!--Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styleitup.css" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-expand-md navbar-dark fixed-top">
+      <div class="navbar-header">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation btn-outline-success">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Binge-Watching</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item active nav-color"><a class="nav-link" href="./home.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./Quizzes.html"><span class="fa fa-info fa-lg"></span> Quizzes</a></li>
+          <li class="nav-item"><a class="nav-link" href="./Facts.html"><span class="fa fa-quote-right  fa-lg"></span> Facts</a></li>
+          <li class="nav-item"><a class="nav-link" href="Characters.html"><span class="fa fa-address-card fa-lg"></span> Character Analysis</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Shows
+              <span class="caret"></span></a>
+              <ul class="dropdown-content">
+                <li><a href="./Netflix.html"><img src="img\netflix-icon.png" height="25px" width="25px">Netflix</a></li>
+                <li><a href="./Prime.html"><img src="img\amazon-icon.png" height="25px" width="25px">Prime Video</a></li>
+                <li><a href="#"><img src="img\youtube-logo.png" height="45px" width="45px">Youtube</a></li>
+              </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <img src="img\background.webp" width="1535" height="450">
+    <br>
+    <div class="row row-header">
+      <div class="col offset-sm-4">
+        <h1>Binge watching!</h1>
+      </div>
+    </div>
+    <div class="row row-content">
+      <div class="col-sm-8 offset-sm-2">
+          <p>
+            Cheers ! to all the bingers,because whoever thinks it's a piece of cake,you are in a hell of a ride,because i am about to change your views about this.
+          </p>
+          <p>
+            We live in an interesting time when instant gratification is the norm, and the days of waiting an entire week (oof!) to see the next episode of a TV show are few and far between, because why would you put yourself through the agony of seven whole days until you find out the next plot twist of your favorite small screen story line if you don't have to? Exactly.
+            <br>
+            That's when streaming services like Netflix, Hulu and Amazon Prime come into play. Instead of depending on cable TV (which is so 2014), you can watch an entire season of your favorite series from beginning to end on your watch, and this beautiful event is otherwise known as binge-watching.
+            <br>
+            Some may consider this a hobby, but these people are amateurs, because real binge-watchers know that it's not just a hobby, it's a lifestyle. There's levels to this shit.
+            We know this from personal experience, and once you read through them all, you may find yourself relating to a lot of this, and that's OK, there's no judgement here.
+          </p>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="row">
+      <div class="col-sm-9 offset-sm-1">
+        <!--Here's a carousel-->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+            <!-- Wrapper : hr slide ka masala -->
+            <div class="carousel-inner" role="listbox">
+               <div class="carousel-item active">
+                 <img class:"d-block img-fluid" src="img\meme-6.jpg" alt="When you come out of your room">
+               </div>
+               <div class="carousel-item ">
+                 <img class:"d-block img-fluid" src="img\meme-1.jpg" alt="Sleep is inevitable">
+               </div>
+               <div class="carousel-item ">
+                 <img class:"d-block img-fluid" src="img\meme-8.jpg" alt="">
+               </div>
+               <div class="carousel-item ">
+                 <img class:"d-block img-fluid" src="img\meme-4.jpg" alt="One doesn't just simply watch a episode,You binge watch.">
+               </div>
+            </div>
+            <!-- Indicators : dots k liye-->
+           <ol class="carousel-indicators">
+             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+             <li data-target="#myCarousel" data-slide-to="1"></li>
+             <li data-target="#myCarousel" data-slide-to="2"></li>
+             <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
+          <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+             <span class="carousel-control-prev-icon"></span>
+         </a>
+         <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+             <span class="carousel-control-next-icon"></span>
+         </a>
+      </div>
+    </div>
+   </div>
+
+
+
+
+
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      $("#hide").click(function()
+      {
+          $("myDropdown").hide();
+      });
+
+      $("#show").click(function()
+      {
+        $("myDropdown").show();
+      });
+      $(document).ready(function () {
+
+      // Attach Button click event listener
+      $("#button2").click(function(){
+
+        // show Modal
+        $('#tvdModal').modal('show');
+      });
+      });
+
+    </script>
+  </body>
+</html>
