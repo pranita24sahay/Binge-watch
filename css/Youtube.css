@@ -2,15 +2,11 @@ body
 {
   background-color:white;
 }
-#backpic
-{
-  margin-top:200pX;
-}
 li{
    list-style-type: none;
 }
 a{
-  color:floralwhite;
+  color:grey;
 }
 
 .row-header
@@ -47,24 +43,50 @@ color:#e50914;
 .dropdown:hover .dropdown-content {
   display: block;
 }
-.carousel-item {
-  height: 400px;
-}
-.carousel-item img {
-    position: absolute;
-    top: 0;
-    margin-left:250px;
-     border-radius: 25px;
-    height: 400px;
-    width: 700px;
-}
-#carouselButton {
-    right:0px;
-    position: absolute;
-    bottom: 0px;
-    z-index: 1;
-}
+
 #more
- {display: none;}
- .nav-colored { background-color:black; }
- .nav-transparent { background-color:transparent;}
+ {
+   display: none;
+ }
+*
+     {
+box-sizing: border-box;
+}
+
+body {
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+ float: left;
+ width: 20%;
+ padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+
+/* Style the counter cards */
+.card {
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+ padding: 2;
+ text-align: center;
+ background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 700px) {
+ .column {
+   width: 100%;
+   display: block;
+   margin-bottom: 20px;
+ }
+}
