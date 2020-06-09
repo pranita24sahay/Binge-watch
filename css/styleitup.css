@@ -50,19 +50,21 @@ li{
   display: inline-block;
 }
 
+a{
+  color:white;
+}
 .dropdown-content {
   display: none;
   color: white;
-  background-color: black;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 12px 16px;
   z-index: 0.75;
 }
- .navbar-nav > li > .dropdown-menu a
- {   color: #555555;  }
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
-l
+l#more
+ {display: none;}
+ .nav-colored { background-color:black; }
+ .nav-transparent { background-color:transparent;}

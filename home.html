@@ -20,7 +20,7 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation btn-outline-success">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">Binge-Watching</a>
+        <a class="navbar-brand" href="./home.html">Binge-Watching</a>
       </div>
 
       <div class="collapse navbar-collapse" id="myNavbar">
@@ -28,7 +28,7 @@
           <li class="nav-item active nav-color"><a class="nav-link" href="./home.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
           <li class="nav-item"><a class="nav-link" href="./Quizzes.html"><span class="fa fa-info fa-lg"></span> Quizzes</a></li>
           <li class="nav-item"><a class="nav-link" href="./Facts.html"><span class="fa fa-quote-right  fa-lg"></span> Facts</a></li>
-          <li class="nav-item"><a class="nav-link" href="Characters.html"><span class="fa fa-address-card fa-lg"></span> Character Analysis</a></li>
+          <li class="nav-item"><a class="nav-link" href="./Character.html"><span class="fa fa-address-card fa-lg"></span> Character Analysis</a></li>
           <li class="dropdown">
             Shows
               <span class="caret"></span>
@@ -128,6 +128,24 @@
         // show Modal
         $('#tvdModal').modal('show');
       });
+      });
+      $(function ()
+       {
+        var myNav = document.getElementById('myNavbar');
+        window.onscroll = function ()
+         {
+          "use strict";
+          if (document.body.scrollTop >= 350 || document.documentElement.scrollTop >= 350 )
+          {
+            myNav.classList.add("nav-colored");
+            myNav.classList.remove("nav-transparent");
+          }
+          else
+          {
+            myNav.classList.add("nav-transparent");
+            myNav.classList.remove("nav-colored");
+          }
+        };
       });
 
     </script>
