@@ -7,9 +7,10 @@ body
 .carousel {
     background:gray;
 }
-img
+#backpic
 {
 z-index:0.5;
+position:
 
 }
 .carousel-item {
@@ -64,7 +65,7 @@ a{
 .dropdown:hover .dropdown-content {
   display: block;
 }
-l#more
+#more
  {display: none;}
- .nav-colored { background-color:black; }
+ .nav-colored { background-color:gray; }
  .nav-transparent { background-color:transparent;}
