@@ -28,7 +28,11 @@ dt {
   position: sticky;
   top: -1px;
 }
-
+i{
+    color: white;
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 1.5em;
+}
 dd {
   font: bold 20px/45px Helvetica, Arial, sans-serif;
   margin: 0;

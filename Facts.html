@@ -31,7 +31,7 @@
           <li class="nav-item"><a class="nav-link" href="./Character.html"><span class="fa fa-address-card fa-lg"></span> Character Analysis</a></li>
           <li class="dropdown">
             Shows
-              <span class="caret"></span>
+              <span class="fas fa-angle-down"></span>
               <ul class="dropdown-content">
                 <li><a href="./Netflix.html">Netflix</a></li>
                 <li><a href="./Prime.html">Amazon Prime</a></li>
@@ -41,11 +41,25 @@
         </ul>
       </div>
     </nav>
-          <br><br><br><br><br><br>
-          <div class="container">
+
+          <img src="img\background.webp" width="100%" height="450">
+          <br>
+          <br> <br>
+        <div class="container">
+          <div class="row">
+            <ol class="col-12 breadcrumb">
+              <li class="breadcrumb-item"><a href="./home.html">Home</a></li>
+                <li class="breadcrumb-item active">Facts</li>
+            </ol>
+            <div class="col-12">
+                <h3>Facts</h3>
+                <hr>
+            </div>
+          </div><br><br><br><br>
+
             <div class="row">
               <div class="col col-sm-3 ">
-            <img src="img\facts box.jpg" width="400" height="200">
+                <img src="img\facts box.jpg" width="400" height="200">
               </div>
             </div>
           </div>
@@ -54,5 +68,25 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+    $(function ()
+     {
+      var myNav = document.getElementById('myNavbar');
+      window.onscroll = function ()
+       {
+        "use strict";
+        if (document.body.scrollTop >= 400 || document.documentElement.scrollTop >= 400 )
+        {
+          myNav.classList.add("nav-colored");
+          myNav.classList.remove("nav-transparent");
+        }
+        else
+        {
+          myNav.classList.add("nav-transparent");
+          myNav.classList.remove("nav-colored");
+        }
+      };
+    });
+  </SCRIPT>
 </body>
 </html>

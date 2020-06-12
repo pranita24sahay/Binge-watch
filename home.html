@@ -15,49 +15,71 @@
 </head>
 
 <body>
+
   <nav class="navbar navbar-inverse navbar-expand-md navbar-dark fixed-top">
-      <div class="navbar-header">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation btn-outline-success">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="./home.html">Binge-Watching</a>
-      </div>
+    <div class="navbar-header">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation btn-outline-success">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="./home.html">Binge-Watching</a>
+    </div>
 
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="navbar-nav">
-          <li class="nav-item active nav-color"><a class="nav-link" href="./home.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="./Quizzes.html"><span class="fa fa-info fa-lg"></span> Quizzes</a></li>
-          <li class="nav-item"><a class="nav-link" href="./Facts.html"><span class="fa fa-quote-right  fa-lg"></span> Facts</a></li>
-          <li class="nav-item"><a class="nav-link" href="./Character.html"><span class="fa fa-address-card fa-lg"></span> Character Analysis</a></li>
-          <li class="dropdown">
-            Shows
-              <span class="caret"></span>
-              <ul class="dropdown-content">
-                <li><a href="./Netflix.html"><img src="img\netflix-icon.png" height="25px" width="25px">Netflix</a></li>
-                <li><a href="./Prime.html"><img src="img\amazon.jpg" height="25px" width="25px">Prime Video</a></li>
-                <li><a href="./Youtube.html"><img src="img\youtubelogo.webp" height="45px" width="45px">Youtube</a></li>
-              </ul>
-          </li>
-        </ul>
-      </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item active nav-color"><a class="nav-link" href="./home.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="./Quizzes.html"><span class="fa fa-info fa-lg"></span> Quizzes</a></li>
+        <li class="nav-item"><a class="nav-link" href="./Facts.html"><span class="fa fa-quote-right  fa-lg"></span> Facts</a></li>
+        <li class="nav-item"><a class="nav-link" href="./Character.html"><span class="fa fa-address-card fa-lg"></span> Character Analysis</a></li>
+        <li class="dropdown">
+          Shows
+            <span class="fas fa-angle-down">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</span>
+            <ul class="dropdown-content">
+              <li><a href="./Netflix.html"><img src="img\netflix-icon.png" height="25px" width="25px">Netflix</a></li>
+              <li><a href="./Prime.html"><img src="img\amazon.jpg" height="25px" width="25px">Prime Video</a></li>
+              <li><a href="./Youtube.html"><img src="img\youtubelogo.webp" height="45px" width="45px">Youtube</a></li>
+            </ul>
+        </li>
+      </ul>
+    </div>
     </nav>
-    <img src="img\background.webp" width="100%" height="450">
+     <div class="row row-header">
+      <div class="col-4 col-sm-8">
 
-    <br>
-    <div class="row row-header">
-      <div class="col offset-sm-4">
+        <div onload="animateDiv()">
+          <div id='popup' class="popup-container">
         <h1>Binge watching!</h1>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 col-sm-1  d-none d-sm-block">
+        <div onload="animatenetflix()">
+          <div id='popdown1' class="popup-container"><a href="https://www.netflix.com">
+              <img src="img\netflixanim.png" width=90% height="10%"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4 col-sm-1  d-none d-sm-block">
+        <div onload="animateprime()">
+          <div id='popdown2' class="popup-container">
+              <img src="img\primeanim.jpg" width=90% height="10%">
+          </div>
+        </div>
       </div>
     </div>
-    <div class="row row-content">
-      <div class="col-sm-8 offset-sm-2">
+
+    <img src="img\background.webp" width="100%" height="450">
+    <br> <br>
+    <br> <br>
+    <div class="row row-content ">
+      <div class="col-sm-7 offset-sm-2">
           <p>
             Cheers ! to all the bingers,because whoever thinks it's a piece of cake,you are in a hell of a ride,because i am about to change your views about this.
           </p>
           <p>
             We live in an interesting time when instant gratification is the norm, and the days of waiting an entire week (oof!) to see the next episode of a TV show are few and far between, because why would you put yourself through the agony of seven whole days until you find out the next plot twist of your favorite small screen story line if you don't have to? Exactly.
             <br>
-            That's when streaming services like Netflix, Hulu and Amazon Prime come into play. Instead of depending on cable TV (which is so 2014), you can watch an entire season of your favorite series from beginning to end on your watch, and this beautiful event is otherwise known as binge-watching.
+            That's when streaming services like Netflix and Amazon Prime come into play. Instead of depending on cable TV (which is so 2014), you can watch an entire season of your favorite series from beginning to end on your watch, and this beautiful event is otherwise known as binge-watching.
             <br>
             Some may consider this a hobby, but these people are amateurs, because real binge-watchers know that it's not just a hobby, it's a lifestyle. There's levels to this shit.
             We know this from personal experience, and once you read through them all, you may find yourself relating to a lot of this, and that's OK, there's no judgement here.
@@ -69,7 +91,7 @@
     <br>
 
     <div class="row">
-      <div class="col-sm-9 offset-sm-1">
+      <div class="col-sm-9 offset-sm-1 d-none d-sm-block">
         <!--Here's a carousel-->
         <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
             <!-- Wrapper : hr slide ka masala -->
@@ -103,8 +125,7 @@
       </div>
     </div>
    </div>
-
-
+ </div>
 
 
 
@@ -112,6 +133,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
+
+
       $("#hide").click(function()
       {
           $("myDropdown").hide();
@@ -136,7 +159,7 @@
         window.onscroll = function ()
          {
           "use strict";
-          if (document.body.scrollTop >= 350 || document.documentElement.scrollTop >= 350 )
+          if (document.body.scrollTop >= 400 || document.documentElement.scrollTop >= 400 )
           {
             myNav.classList.add("nav-colored");
             myNav.classList.remove("nav-transparent");
@@ -148,6 +171,19 @@
           }
         };
       });
+      $(function animateDiv(){
+		      var popup = document.getElementById("popup");
+		        popup.style.top = "460px";
+
+	         });
+      $(function animatenetflix(){
+         var popdown1 = document.getElementById("popdown1");
+            popdown1.style.top = "480px";
+              });
+      $(function animateprime(){
+         var popdown2 = document.getElementById("popdown2");
+           popdown2.style.top = "480px";
+                      });
 
     </script>
   </body>
