@@ -40,12 +40,7 @@ color:#e50914;
   padding: 12px 16px;
   z-index: 0.75;
 }
- .navbar-nav > li > .dropdown-menu a
- {   color: white;  }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
 
 #more
  {

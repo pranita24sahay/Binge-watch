@@ -11,6 +11,21 @@ body
 {
 z-index:0.5;
 }
+h4
+{
+  color: black;
+}
+label{
+  color:black;
+}
+#loginModal
+{
+  float: right;
+}
+#mybutton
+{
+  float: right;
+}
 @keyframes example
 {
   0% {background-color:#d3d3d3 ; left:200px; top:0px; }
@@ -128,10 +143,7 @@ breadcrumb > li{
   padding: 12px 16px;
   z-index: 0.75;
 }
-.dropdown:hover .dropdown-content
- {
-  display: block;
-}
+
 #more
  {
    display: none;

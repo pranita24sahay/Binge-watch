@@ -29,93 +29,94 @@
           <li class="nav-item"><a class="nav-link" href="./Quizzes.html"><span class="fa fa-info fa-lg"></span> Quizzes</a></li>
           <li class="nav-item"><a class="nav-link" href="./Facts.html"><span class="fa fa-quote-right  fa-lg"></span> Facts</a></li>
           <li class="nav-item"><a class="nav-link" href="./Character.html"><span class="fa fa-address-card fa-lg"></span> Character Analysis</a></li>
-          <li class="dropdown active nav-color">
-            Shows
-              <span class="fas fa-angle-down">&nbsp &nbsp &nbsp &nbsp</span>
-              <ul class="dropdown-content">
-                <li><a href="./Netflix.html">Netflix</a></li>
-                <li><a href="./Prime.html">Amazon Prime</a></li>
-                <li class="darker"><a href="#">Youtube</a></li>
-              </ul>
-          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Shows
+            </a>
+            <div class="dropdown-menu dropdown-content">
+              <a class="dropdown-item" href="./netflix.html">Netflix</a>
+              <a class="dropdown-item" href="./prime.html">Amazon Prime</a>
+              <a class="dropdown-item" href="./Youtube.html">Youtube</a>
+           </div>
+         </li>
           <li class="nav-item ml-auto">
           <input type="text" class="align-last ml-auto" placeholder="Search..">
-        </li>
+          </li>
         </ul>
       </div>
     </nav>
-    <br>
       <br>
       <br>
-    <div class="col-xs-12 offset-sm-2" d="backpic">
-    <img src="img\youtubelogo.webp" width="100%" height="350" >
-  </div>
-    <br>
-    <br>
+      <br>
+      <div class="col-xs-12 offset-sm-2" d="backpic">
+        <img src="img\youtubelogo.webp" width="100%" height="350" >
+      </div>
+      <br>
+      <br>
 
+        <div class="fluid-container">
 
+            <div class="row">
+                <div class="column">
+                    <div class="card"><img src="img\Youtube\adulting2.jpeg" height="300px" ></div>
+                </div>
+                <div class="column">
+                    <div class="card"><img src="img\Youtube\baked.jpg" height="300px"></div>
+                </div>
+                <div class="column">
+                    <div class="card"><img src="img\Youtube\tripling.jpg" height="300px"></div>
+                </div>
+                <div class="column">
+                    <div class="card"><img src="img\Youtube\college romance.jpg" height="300px"></div>
+                </div>
+                <div class="column">
+                    <div class="card"><img src="img\Youtube\engg girls.jpg" height="300px" ></div>
+                </div>
+           </div>
 
-                  <div class="row">
-                  <div class="column">
-                  <div class="card"><img src="img\Youtube\adulting2.jpeg" height="300px" ></div>
-                  </div>
-                  <div class="column">
-                  <div class="card"><img src="img\Youtube\baked.jpg" height="300px"></div>
-                  </div>
-                  <div class="column">
-                  <div class="card"><img src="img\Youtube\tripling.jpg" height="300px"></div>
-                  </div>
-                  <div class="column">
-                  <div class="card"><img src="img\Youtube\college romance.jpg" height="300px"></div>
-                  </div>
-                  <div class="column">
-                  <div class="card"><img src="img\Youtube\engg girls.jpg" height="300px" ></div>
-                  </div>
-                  </div>
-
-                  <div class="row">
-
-                  <div class="column">
+           <div class="row">
+                <div class="column">
                   <div class="card"><img src="img\Youtube\flames.jpg" height="300px"></div>
-                  </div>
-                  <div class="column">
+                </div>
+                <div class="column">
                   <div class="card"><img src="img\Youtube\girls hostel.jpg" height="300px"></div>
-                  </div>
-                  <div class="column">
+                </div>
+                <div class="column">
                   <div class="card"><img src="img\Youtube\ladies room.jpg" height="300px"></div>
-                  </div>
-                  <div class="column">
+                </div>
+                <div class="column">
                   <div class="card d-none d-sm-block"><img src="img\Youtube\permroom.jpg" height="300px"></div>
-                  </div><div class="column">
+                </div>
+                <div class="column">
                   <div class="card"><img src="img\Youtube\pitchers.jpg" height="300px"></div>
-                  </div>
-                  </div>
+                </div>
+          </div>
+        </div>
 
 
+          <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+          <script>
+              $("#hide").click(function()
+                {
+                    $("myDropdown").hide();
+                });
 
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-          $("#hide").click(function()
-          {
-              $("myDropdown").hide();
-          });
+             $("#show").click(function()
+                {
+                  $("myDropdown").show();
+                });
+             $(document).ready(function ()
+             {
+                // Attach Button click event listener
+                $("#button2").click(function()
+                {
+                  // show Modal
+                  $('#tvdModal').modal('show');
+                });
+                });
 
-          $("#show").click(function()
-          {
-            $("myDropdown").show();
-          });
-          $(document).ready(function () {
-
-          // Attach Button click event listener
-          $("#button2").click(function(){
-
-            // show Modal
-            $('#tvdModal').modal('show');
-          });
-          });
-
-        </script>
+          </script>
     </body>
 </html>
